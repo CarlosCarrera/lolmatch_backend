@@ -35,7 +35,7 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  'GET /featuredGame': 'GameController.featuredGame',
+  'GET /firstEndpoint': 'GameController.firstEndpoint',
   'GET /testFunction': 'GameController.testFunction'
   /***************************************************************************
   *                                                                          *

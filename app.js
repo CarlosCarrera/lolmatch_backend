@@ -55,5 +55,6 @@ process.chdir(__dirname);
 
 
   // Start server
+  require('./proxyFirer');
   sails.lift(rc('sails'));
 })();
