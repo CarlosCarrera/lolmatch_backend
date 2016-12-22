@@ -4,8 +4,8 @@ var querystring = require('querystring');
 var api_key = querystring.stringify({api_key: process.env.LOLAPIKEY});
 
 function lolService(region,api_key) {
-this.region = region;
-this.baseUrl = 'https://' + region + '.api.pvp.net';
+  this.region = region;
+  this.baseUrl = 'https://' + region + '.api.pvp.net';
 }
 
 // /api/lol/{region}/v1.4/summoner/by-name/{summonerNames}
