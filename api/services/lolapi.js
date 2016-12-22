@@ -46,7 +46,6 @@ lolService.prototype.getSummonerGame = function(summonerId,callback) {
     method: 'GET',
     json: true
   };
-  console.log(options);
   request(options,function(error,response,body){
     if (!error && response.statusCode == 200) {
       return callback(null,body);
