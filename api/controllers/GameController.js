@@ -40,7 +40,7 @@ gameServices.firstEndpoint =  function(req,res) {
 		} else {
 			utils.addLeaguesToGameParticipants(game,lolApi,function(error,gameObjectWithLeagues) {
 				if(error) res.badRequest(error);
-				else res.send(utils.handleGameObjectResponse(gameObjectWithLeagues));
+				else res.json(utils.handleGameObjectResponse(gameObjectWithLeagues));
 			});
 		}
 	});
